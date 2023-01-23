@@ -14,10 +14,22 @@ const styles = StyleSheet.create({
 		flex: 1,
 		height: Math.floor(buttonWidth - 10),
 		alignItems: 'center',
+		justifyContent: 'center',
+		borderRadius: Math.floor(buttonWidth),
+		margin: 5,
 	},
-	buttonDouble: {},
-	buttonSecondary: {},
-	buttonAccent: {},
+	buttonDouble: {
+		width: screen.width / 2 - 10,
+		flex: 0,
+		alignItems: 'flex-start',
+		paddingLeft: 40,
+	},
+	buttonSecondary: {
+		backgroundColor: '#a6a6a6',
+	},
+	buttonAccent: {
+		backgroundColor: '#f09a36',
+	},
 });
 export default ({ onPress, text, size, theme }) => {
 	const buttonStyles = [styles.button];
