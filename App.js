@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import Row from './components/Row';
 import Button from './components/Button';
 import calculator, { initialState } from './utils/calculator';
-
+//TODO create a state for storing previous inputs/results
 export default class App extends React.Component {
 	state = initialState;
 
