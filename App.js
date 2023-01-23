@@ -1,14 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
+import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import Row from './components/Row';
 import Button from './components/Button';
 import calculator, { initialState } from './utils/calculator';
 
 export default class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = initialState;
+		this.handleTap = this.handleTap.bind(this);
+	}
 	state = initialState;
 
 	handleTap = (type, value) => {
+		console.log(type, value);
 		this.setState((state) => calculator(type, value, state));
 	};
 	render() {
