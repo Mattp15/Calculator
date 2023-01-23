@@ -46,7 +46,7 @@ export default ({ onPress, text, size, theme }) => {
 	}
 
 	return (
-		<TouchableOpacity onpress={onPress} style={buttonStyles}>
+		<TouchableOpacity onPress={onPress} style={buttonStyles}>
 			<Text style={textStyles}>{text}</Text>
 		</TouchableOpacity>
 	);

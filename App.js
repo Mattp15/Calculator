@@ -6,11 +6,6 @@ import Button from './components/Button';
 import calculator, { initialState } from './utils/calculator';
 
 export default class App extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = initialState;
-		this.handleTap = this.handleTap.bind(this);
-	}
 	state = initialState;
 
 	handleTap = (type, value) => {
@@ -62,7 +57,7 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: '#202020',
-		justifyContent: 'center',
+		justifyContent: 'flex-end',
 	},
 	value: {
 		color: '#fff',
