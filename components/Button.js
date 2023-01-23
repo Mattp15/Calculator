@@ -2,7 +2,7 @@ import React from 'react';
 import { TouchableOpacity, StyleSheet, Text, Dimensions } from 'react-native';
 
 const screen = Dimensions.get('window');
-const bottonWidth = screen.width / 4;
+const buttonWidth = screen.width / 4;
 
 const styles = StyleSheet.create({
 	text: {
@@ -11,6 +11,9 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		backgroundColor: '#333333',
+		flex: 1,
+		height: Math.floor(buttonWidth - 10),
+		alignItems: 'center',
 	},
 	buttonDouble: {},
 	buttonSecondary: {},
