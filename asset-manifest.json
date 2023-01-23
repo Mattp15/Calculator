@@ -1,0 +1,22 @@
+{
+  "files": {
+    "app.js": "/Mattp15/Calculator.git/static/js/app.3bc46312.chunk.js",
+    "app.js.map": "/Mattp15/Calculator.git/static/js/app.3bc46312.chunk.js.map",
+    "runtime~app.js": "/Mattp15/Calculator.git/static/js/runtime~app.bdd1b852.js",
+    "runtime~app.js.map": "/Mattp15/Calculator.git/static/js/runtime~app.bdd1b852.js.map",
+    "static/js/2.8ac9490f.chunk.js": "/Mattp15/Calculator.git/static/js/2.8ac9490f.chunk.js",
+    "static/js/2.8ac9490f.chunk.js.map": "/Mattp15/Calculator.git/static/js/2.8ac9490f.chunk.js.map",
+    "favicon-16.png": "/Mattp15/Calculator.git/favicon-16.png",
+    "favicon-32.png": "/Mattp15/Calculator.git/favicon-32.png",
+    "favicon.ico": "/Mattp15/Calculator.git/favicon.ico",
+    "index.html": "/Mattp15/Calculator.git/index.html",
+    "manifest.json": "/Mattp15/Calculator.git/manifest.json",
+    "serve.json": "/Mattp15/Calculator.git/serve.json",
+    "static/js/2.8ac9490f.chunk.js.LICENSE.txt": "/Mattp15/Calculator.git/static/js/2.8ac9490f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.bdd1b852.js",
+    "static/js/2.8ac9490f.chunk.js",
+    "static/js/app.3bc46312.chunk.js"
+  ]
+}
