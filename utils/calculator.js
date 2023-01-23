@@ -2,6 +2,7 @@ export const initialState = {
 	currentValue: '0',
 	operator: null,
 	previousValue: null,
+	list: [],
 };
 
 export const handleNumber = (value, state) => {

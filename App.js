@@ -4,12 +4,10 @@ import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import Row from './components/Row';
 import Button from './components/Button';
 import calculator, { initialState } from './utils/calculator';
-//TODO create a state for storing previous inputs/results
 export default class App extends React.Component {
 	state = initialState;
 
 	handleTap = (type, value) => {
-		console.log(type, value);
 		this.setState((state) => calculator(type, value, state));
 	};
 	render() {
@@ -17,6 +15,13 @@ export default class App extends React.Component {
 			<View style={styles.container}>
 				<StatusBar style="auto" />
 				<SafeAreaView>
+					{this.state.list.map((x) => {
+						return (
+							<Text key={x} style={styles.value}>
+								{parseFloat(x).toLocaleString()}
+							</Text>
+						);
+					})}
 					<Text style={styles.value}>{parseFloat(this.state.currentValue).toLocaleString()}</Text>
 					<Row>
 						<Button text="C" theme="secondary" onPress={() => this.handleTap('clear')} />
